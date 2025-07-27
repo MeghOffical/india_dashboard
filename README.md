@@ -121,5 +121,3 @@ My primary interests are:
 Feel free to fork, star, or collaborate on data-focused projects!
 
 🔗 GitHub: [@MeghOffical](https://github.com/MeghOffical)
-
-````
