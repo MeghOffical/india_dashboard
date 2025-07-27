@@ -1,16 +1,3 @@
----
-
-````markdown
-# 🇮🇳 Demographix: Indian District Intelligence Dashboard
-
-[![Made with Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-orange?style=for-the-badge&logo=streamlit)](https://streamlit.io)
-[![GitHub Repo](https://img.shields.io/badge/Source-GitHub-black?style=for-the-badge&logo=github)](https://github.com/MeghOffical/india_dashboard)
-[![Live Demo](https://img.shields.io/badge/Live_App-Click_Here-brightgreen?style=for-the-badge&logo=google-chrome)](https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app/)
-
-> A data-rich, interactive dashboard visualizing district-level Indian statistics—covering Census 2011, Health (NFHS), Crime (NCRB), and Government Spending using OpenBudgetsIndia.
-
----
-
 ## 📊 Project Overview
 
 **Demographix** is an open-source, multi-part dashboard project that brings together crucial datasets from various public domains to provide insights into India's development across regions.
@@ -39,11 +26,7 @@ It allows users to:
 - Indicators like stunting, wasting, anemia, under-5 mortality.
 - Geospatial mapping and multi-indicator correlation.
 
-### 🔜 Part 4: Air Quality and Exposure (Coming Soon)
-- Population-weighted AQI exposure metrics.
-- District-level air quality analysis.
-
-### ✅ Part 5: Budget & Spending (OpenBudgetsIndia)
+### ✅ Part 4: Budget & Spending (OpenBudgetsIndia)
 - Explore government expenditure by state across categories like Health, Education, and Rural Development.
 
 ---
