@@ -1,5 +1,4 @@
-```markdown
-# 🇮🇳 Demographix: Indian District Intelligence Dashboard
+```# 🇮🇳 Demographix: Indian District Intelligence Dashboard
 
 [![Streamlit](https://img.shields.io/badge/Made%20with-Streamlit-orange)](https://streamlit.io/) [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
@@ -34,10 +33,10 @@
 
 | Module                  | Source                                                                                                             |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Census & Demographics   | [Census 2011 (Kaggle)](https://www.kaggle.com/datasets/rohanrao/indian-census)                                      |
+| Census & Demographics   | [Census 2011 (Kaggle)](https://www.kaggle.com/datasets/rohanrao/indian-census)                                     |
 | Crime Data              | NCRB district‑wise crime statistics (public domain releases)                                                       |
 | Health & Nutrition      | NFHS‑5 district‑level indicators (Government of India datasets)                                                    |
-| Budget & Spending       | OpenBudgetsIndia state‑level allocations & GVA data                                                                 |
+| Budget & Spending       | OpenBudgetsIndia state‑level allocations & GVA data                                                                |
 
 Place your CSV files (`india_data.csv`, `crime_data.csv`, `health_data.csv`, `budget_data.csv`) in the project root or update paths in `app.py`.
 
