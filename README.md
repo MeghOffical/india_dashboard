@@ -74,18 +74,6 @@ streamlit run app.py
 
 ---
 
-## 🖼️ Dashboard Preview
-
-You can upload an image (e.g., `preview.png`) in your repo and embed like this:
-
-```markdown
-![Dashboard Preview](./assets/preview.png)
-```
-
-*Tip: Create a folder named `assets/` and drag your image into it.*
-
----
-
 ## 📚 Data Sources
 
 * 📌 [Census of India 2011](https://censusindia.gov.in)
