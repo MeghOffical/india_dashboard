@@ -1,5 +1,3 @@
----
-
 > 📊 An interactive and insightful dashboard visualizing Indian district-level data from Census 2011, NFHS-5, NCRB Crime Reports, and OpenBudgetsIndia.
 
 ---
@@ -83,11 +81,9 @@ streamlit run app.py
 
 ---
 
-## 👨‍💻 Author
+## 📝 License
 
-**Megh Bavarva**
-🔗 [GitHub](https://github.com/MeghOffical)
-📬 [meghbavarva@gmail.com](mailto:meghbavarva@gmail.com)
+This project is open source feel free to contribute it.
 
 ---
 
@@ -96,5 +92,22 @@ streamlit run app.py
 If you found this project useful or insightful, consider starring the repo and sharing it!
 
 ---
+
+## 🙋 About the Creator
+
+👤 **Megh Bavarva**  
+
+I'm deeply passionate about **data science** and **data-driven storytelling**.  
+This project was built as a way to apply **real-world data analysis** using IPL cricket data, and to showcase how raw CSVs can be transformed into actionable insights through APIs and dashboards.  
+
+My primary interests are:
+- **Data wrangling and feature engineering**
+- **Building analytics pipelines**
+- **Working with Pandas, NumPy, and ML tools**
+- **Solving real-world problems using data**
+
+Feel free to fork, star, or collaborate on data-focused projects!
+
+🔗 GitHub: [@MeghOffical](https://github.com/MeghOffical)
 
 ````
