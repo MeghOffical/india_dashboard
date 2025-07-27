@@ -1,151 +1,143 @@
-````md
+---
+
+````markdown
 # 🇮🇳 Demographix: Indian District Intelligence Dashboard
 
-[![Streamlit](https://img.shields.io/badge/Made%20with-Streamlit-orange)](https://streamlit.io/)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Made with Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-orange?style=for-the-badge&logo=streamlit)](https://streamlit.io)
+[![GitHub Repo](https://img.shields.io/badge/Source-GitHub-black?style=for-the-badge&logo=github)](https://github.com/MeghOffical/india_dashboard)
+[![Live Demo](https://img.shields.io/badge/Live_App-Click_Here-brightgreen?style=for-the-badge&logo=google-chrome)](https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app/)
+
+> A data-rich, interactive dashboard visualizing district-level Indian statistics—covering Census 2011, Health (NFHS), Crime (NCRB), and Government Spending using OpenBudgetsIndia.
 
 ---
 
-## 🔍 Overview
+## 📊 Project Overview
 
-**Demographix** is an interactive, district-level data visualization platform built using **Streamlit**. It empowers users to explore and compare key **socio-economic**, **health**, **crime**, and **budget** indicators across India’s 28 states, 8 union territories, and 600+ districts — all powered by open government datasets like **Census 2011**, **NFHS-5**, and **OpenBudgetsIndia**.
+**Demographix** is an open-source, multi-part dashboard project that brings together crucial datasets from various public domains to provide insights into India's development across regions.
 
-<p align="center">
-  <img src="screenshots/homepage.png" alt="Demographix Home" width="700"/>
-</p>
+It allows users to:
+- Analyze and compare districts across literacy, sanitation, infrastructure.
+- Explore health and nutrition metrics from NFHS-5.
+- View government spending and budgeting at the state level.
+- Identify development gaps using ranked indicators and charts.
 
----
-
-## 🚀 Features
-
-- ✅ Full-screen, responsive UI with modern glassmorphism cards  
-- 🧭 Modular layout:
-  - 📊 **Census & Demographics**
-  - 🛡️ **Crime Data**
-  - 💉 **Health & Nutrition**
-  - 💰 **Budget & Spending**
-- 🌐 Interactive Mapbox geospatial charts
-- 📈 Top-5 ranked tables by selected indicators
-- ⚙️ Customizable filters for State, Year, and Parameters
-- 🧹 Clean landing page with summary, sources, and instructions
+🔗 **Live Demo**: [https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app](https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app)
 
 ---
 
-## 🗂️ Data Sources
+## 🧩 Features
 
-| Module               | Source                                                                                      |
-|----------------------|---------------------------------------------------------------------------------------------|
-| Census & Demographics | [Census 2011 - Kaggle](https://www.kaggle.com/datasets/rohanrao/indian-census)             |
-| Crime Data           | NCRB District-wise Crime Statistics (Govt. of India - Open Data)                           |
-| Health & Nutrition   | NFHS-5 (National Family Health Survey) - India District Factsheets                        |
-| Budget & Spending    | [OpenBudgetsIndia](https://openbudgetsindia.org/) - State-level GVA, Expenditure, and more |
+### ✅ Part 1: Census 2011 Analysis
+- Explore literacy rates, toilet facilities, housing, and more at district level.
+- Heatmaps, bar charts, and ranking tables for visual insights.
 
-📁 Place your CSV files (`india_data.csv`, `crime_data.csv`, `health_data.csv`, `budget_data.csv`) in the project root or update the paths in `app.py`.
+### ✅ Part 2: State & District-Level Rankings
+- Compare parameters like Female Literacy, Pucca Housing, and Sanitation.
+- See top/bottom ranked districts in each state.
+
+### ✅ Part 3: Health & Nutrition (NFHS-5)
+- Indicators like stunting, wasting, anemia, under-5 mortality.
+- Geospatial mapping and multi-indicator correlation.
+
+### 🔜 Part 4: Air Quality and Exposure (Coming Soon)
+- Population-weighted AQI exposure metrics.
+- District-level air quality analysis.
+
+### ✅ Part 5: Budget & Spending (OpenBudgetsIndia)
+- Explore government expenditure by state across categories like Health, Education, and Rural Development.
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 Project Structure
 
-- **Python 3.8+**
-- **Streamlit** – frontend web app
-- **Pandas, NumPy** – data processing
-- **Plotly Express + Mapbox** – for interactive maps & graphs
-- **HTML & CSS (inline)** – for layout styling and enhancements
-
----
-
-## 📥 Installation & Quick Start
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/MeghOffical/india_dashboard.git
-   cd india_dashboard
+```bash
+india_dashboard/
+├── pages/
+│   ├── 1_Census_Analysis.py
+│   ├── 2_Statewise_Rankings.py
+│   ├── 3_Health_Nutrition.py
+│   ├── 4_AirQuality_Exposure.py   # (coming soon)
+│   └── 5_Budget_Spending.py
+├── data/
+│   ├── census_2011.csv
+│   ├── nfhs_5_district.csv
+│   ├── state_budgets.csv
+│   └── district_centroids.csv
+├── Home.py
+├── utils.py
+└── README.md
 ````
 
-2. **Create a virtual environment** (optional but recommended)
+---
 
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate      # For Linux/Mac
-   .venv\Scripts\activate         # For Windows
-   ```
+## 📌 Tech Stack
 
-3. **Install the dependencies**
+* **Frontend**: [Streamlit](https://streamlit.io)
+* **Visualization**: [Plotly](https://plotly.com), [Pandas](https://pandas.pydata.org/)
+* **Data Sources**:
 
-   ```bash
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-
-4. **Run the Streamlit app**
-
-   ```bash
-   streamlit run app.py
-   ```
-
-5. Open your browser and go to `http://localhost:8501`
+  * [Census 2011 India](https://censusindia.gov.in)
+  * [NFHS-5 (Health Survey)](http://rchiips.org/nfhs/)
+  * [NCRB Crime Stats](https://ncrb.gov.in)
+  * [OpenBudgetsIndia](https://openbudgetsindia.org)
 
 ---
 
-## 📖 How to Use
+## 🚀 Getting Started
 
-1. **Landing Page**
+### 🔧 Requirements
 
-   * Overview, purpose, modules, and dataset summaries.
+* Python 3.9+
+* Install dependencies:
 
-2. **Explore Any Module**
+```bash
+pip install -r requirements.txt
+```
 
-   * Choose a module from sidebar (Census, Crime, Health, Budget).
-   * Use filters like *State*, *Year*, *Primary Parameter*, *Secondary Parameter*.
-   * Click **Plot Graph** to visualize.
+### ▶️ Run the App
 
-3. **Interactivity**
-
-   * Hover over map charts to see details.
-   * Zoom, pan, or export graphs using Plotly toolbar.
-
----
-
-## 🤝 Contributing
-
-Want to contribute? Great! Follow these steps:
-
-1. **Fork** this repo.
-2. **Create a feature branch**
-
-   ```bash
-   git checkout -b feature/my-new-feature
-   ```
-3. **Commit your changes**
-
-   ```bash
-   git commit -m "Add my feature"
-   ```
-4. **Push to GitHub**
-
-   ```bash
-   git push origin feature/my-new-feature
-   ```
-5. **Open a Pull Request** – We'll review and merge!
-
-Please follow the existing coding style and update the README or documentation if necessary.
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 👨‍💻 Author
-
-**Megh Bavarva**
-📧 [megh@example.com](mailto:megh@example.com)
-🔗 GitHub: [@MeghOffical](https://github.com/MeghOffical)
-
-<p align="center"><b>✨ Happy Exploring – Data speaks louder than words! ✨</b></p>
+```bash
+streamlit run Home.py
 ```
 
 ---
+
+## 📸 Dashboard Preview
+
+| Census Insights                                                                     | Health Overview                                                                     | Budget Trends                                                                       |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| ![census](https://github.com/MeghOffical/india_dashboard/assets/preview-census.png) | ![health](https://github.com/MeghOffical/india_dashboard/assets/preview-health.png) | ![budget](https://github.com/MeghOffical/india_dashboard/assets/preview-budget.png) |
+
+---
+
+## 📢 Acknowledgements
+
+* Government of India for open data sources.
+* Streamlit & Plotly for free tools to build amazing dashboards.
+
+---
+
+## ✍️ Author
+
+**Megh Bavarva**
+💼 [GitHub](https://github.com/MeghOffical) | 🌐 [LinkedIn](https://linkedin.com/in/meghbavarva) | 📫 [meghbavarva@gmail.com](mailto:meghbavarva@gmail.com)
+
+---
+
+## ⭐️ Show Your Support
+
+If you find this project useful, don't forget to give it a ⭐️ on GitHub and share it!
+
+---
+
+```
+
+---
+
+### ✅ Next Steps for You:
+- Add actual image previews to the GitHub repo (`assets/preview-census.png`, etc.) or remove that preview section.
+- Update the `requirements.txt` if not already included.
+- Push this `README.md` to the root of your GitHub repository.
+
+Would you like me to **create and upload preview images** or help format cards/tabs on the front page too?
+```
