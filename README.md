@@ -3,6 +3,17 @@ An interactive dashboard for Indian district-level insights from Census, Health,
 
 ![Dashboard Preview](./Home_page.png)
 
+## 📈 Dashboard Modules
+
+Below are the four key analytical modules built into this project:
+
+| Module | Preview | Description |
+|--------|---------|-------------|
+| 🧮 **Census 2011 Insights** | ![Census](./Census.png) | Analyze district-wise literacy, sanitation, housing, and infrastructure across India using Census 2011 data. |
+| 🩺 **Health & Nutrition (NFHS-5)** | ![Health](./Health.png) | Visualize public health metrics like child stunting, anemia, immunization, and more from NFHS-5 survey. |
+| 🕵️ **Crime Statistics (NCRB)** | ![Crime](./Crime.png) | Explore district and state-level crime rates and patterns using official NCRB reports. |
+| 💰 **State Budget Spending** | ![Budget](./Budget.png) | Understand how state governments allocate and spend funds across health, education, and development. |
+
 ## 🚀 Live Demo
 
 👉 **Streamlit App**: [https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app](https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app/)
