@@ -1,126 +1,112 @@
-## 📊 Project Overview
+---
 
-**Demographix** is an open-source, multi-part dashboard project that brings together crucial datasets from various public domains to provide insights into India's development across regions.
+> 📊 An interactive and insightful dashboard visualizing Indian district-level data from Census 2011, NFHS-5, NCRB Crime Reports, and OpenBudgetsIndia.
 
-It allows users to:
-- Analyze and compare districts across literacy, sanitation, infrastructure.
-- Explore health and nutrition metrics from NFHS-5.
-- View government spending and budgeting at the state level.
-- Identify development gaps using ranked indicators and charts.
+---
 
-🔗 **Live Demo**: [https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app](https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app)
+## 🚀 Live Demo
+
+👉 **Streamlit App**: [https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app](https://indiadashboard-pefccic4eudc3vkrne5rvz.streamlit.app/)
+
+---
+
+## 📌 Project Overview
+
+This dashboard helps users analyze and compare districts and states across multiple parameters such as:
+- Literacy and sanitation (Census 2011)
+- Health and nutrition indicators (NFHS-5)
+- Crime statistics (NCRB)
+- Budget and government expenditure (OpenBudgetsIndia)
+
+It provides a comprehensive, visual understanding of regional development in India.
 
 ---
 
 ## 🧩 Features
 
-### ✅ Part 1: Census 2011 Analysis
-- Explore literacy rates, toilet facilities, housing, and more at district level.
-- Heatmaps, bar charts, and ranking tables for visual insights.
-
-### ✅ Part 2: State & District-Level Rankings
-- Compare parameters like Female Literacy, Pucca Housing, and Sanitation.
-- See top/bottom ranked districts in each state.
-
-### ✅ Part 3: Health & Nutrition (NFHS-5)
-- Indicators like stunting, wasting, anemia, under-5 mortality.
-- Geospatial mapping and multi-indicator correlation.
-
-### ✅ Part 4: Budget & Spending (OpenBudgetsIndia)
-- Explore government expenditure by state across categories like Health, Education, and Rural Development.
+- 📍 District-wise analysis with parameter filters
+- 📊 Bar charts, maps, and correlation plots
+- 🩺 Health outcomes like child stunting, anemia, and under-5 mortality
+- ⚖️ State government budget visualizations by sector
+- 🔒 Built with a clean Streamlit interface
 
 ---
 
-## 📂 Project Structure
+## 🗂️ File Structure
 
-```bash
-india_dashboard/
-├── pages/
-│   ├── 1_Census_Analysis.py
-│   ├── 2_Statewise_Rankings.py
-│   ├── 3_Health_Nutrition.py
-│   ├── 4_AirQuality_Exposure.py   # (coming soon)
-│   └── 5_Budget_Spending.py
-├── data/
-│   ├── census_2011.csv
-│   ├── nfhs_5_district.csv
-│   ├── state_budgets.csv
-│   └── district_centroids.csv
-├── Home.py
-├── utils.py
-└── README.md
+```
+
+india\_dashboard/
+├── app.py                # Main Streamlit app
+├── budget\_data.csv       # Budget and spending dataset
+├── crime\_data.csv        # NCRB crime statistics
+├── health\_data.csv       # NFHS-5 health and nutrition data
+├── india\_data.csv        # Census 2011-based metrics
+├── requirements.txt      # Python dependencies
+└── README.md             # This file
+
 ````
 
 ---
 
-## 📌 Tech Stack
+## 📦 Setup Instructions
 
-* **Frontend**: [Streamlit](https://streamlit.io)
-* **Visualization**: [Plotly](https://plotly.com), [Pandas](https://pandas.pydata.org/)
-* **Data Sources**:
+### 1. Clone the Repository
 
-  * [Census 2011 India](https://censusindia.gov.in)
-  * [NFHS-5 (Health Survey)](http://rchiips.org/nfhs/)
-  * [NCRB Crime Stats](https://ncrb.gov.in)
-  * [OpenBudgetsIndia](https://openbudgetsindia.org)
+```bash
+git clone https://github.com/MeghOffical/india_dashboard.git
+cd india_dashboard
+````
 
----
+### 2. Install Dependencies
 
-## 🚀 Getting Started
-
-### 🔧 Requirements
-
-* Python 3.9+
-* Install dependencies:
+Make sure Python 3.9+ is installed.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### ▶️ Run the App
+### 3. Run the Streamlit App
 
 ```bash
-streamlit run Home.py
+streamlit run app.py
 ```
 
 ---
 
-## 📸 Dashboard Preview
+## 🖼️ Dashboard Preview
 
-| Census Insights                                                                     | Health Overview                                                                     | Budget Trends                                                                       |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| ![census](https://github.com/MeghOffical/india_dashboard/assets/preview-census.png) | ![health](https://github.com/MeghOffical/india_dashboard/assets/preview-health.png) | ![budget](https://github.com/MeghOffical/india_dashboard/assets/preview-budget.png) |
+You can upload an image (e.g., `preview.png`) in your repo and embed like this:
 
----
+```markdown
+![Dashboard Preview](./assets/preview.png)
+```
 
-## 📢 Acknowledgements
-
-* Government of India for open data sources.
-* Streamlit & Plotly for free tools to build amazing dashboards.
+*Tip: Create a folder named `assets/` and drag your image into it.*
 
 ---
 
-## ✍️ Author
+## 📚 Data Sources
+
+* 📌 [Census of India 2011](https://censusindia.gov.in)
+* 🩺 [NFHS-5 Survey](http://rchiips.org/nfhs/)
+* 🕵️ [NCRB Crime Statistics](https://ncrb.gov.in/)
+* 💰 [OpenBudgetsIndia](https://openbudgetsindia.org)
+
+---
+
+## 👨‍💻 Author
 
 **Megh Bavarva**
-💼 [GitHub](https://github.com/MeghOffical) | 🌐 [LinkedIn](https://linkedin.com/in/meghbavarva) | 📫 [meghbavarva@gmail.com](mailto:meghbavarva@gmail.com)
+🔗 [GitHub](https://github.com/MeghOffical)
+📬 [meghbavarva@gmail.com](mailto:meghbavarva@gmail.com)
 
 ---
 
-## ⭐️ Show Your Support
+## ⭐ Support
 
-If you find this project useful, don't forget to give it a ⭐️ on GitHub and share it!
-
----
-
-```
+If you found this project useful or insightful, consider starring the repo and sharing it!
 
 ---
 
-### ✅ Next Steps for You:
-- Add actual image previews to the GitHub repo (`assets/preview-census.png`, etc.) or remove that preview section.
-- Update the `requirements.txt` if not already included.
-- Push this `README.md` to the root of your GitHub repository.
-
-Would you like me to **create and upload preview images** or help format cards/tabs on the front page too?
-```
+````
