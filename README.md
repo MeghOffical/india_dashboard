@@ -1,6 +1,7 @@
 ### 📊 Project Summary
 An interactive dashboard for Indian district-level insights from Census, Health, Crime, and Budget datasets.
 
+![Dashboard Preview](./Home_page.png)
 
 ## 🚀 Live Demo
 
